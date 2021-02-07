@@ -1,9 +1,9 @@
 :root {
-    --primary-color: rgb(62, 114, 62);
-    --secondary-color: rgb(79, 175, 231);
-    --tertiary-color: rgb(182, 182, 21);
+    --primary-color: rgb(119, 115, 115);
+    --secondary-color: rgb(198,187,181); 
+    --tertiary-color: rgb(245, 251, 255);
+    --fourth-color: black;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -12,6 +12,12 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
 }
 /*header styles*/
 header {
@@ -28,8 +34,8 @@ header {
 }
 header h1 {
     font-weight: bold;
-    font-size: 36px;
-    color: var(--tertiary-color);
+    font-size: 48px;
+    color: var(--fourth-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
@@ -63,12 +69,16 @@ header nav ul li a:hover {
 /*hero styles*/
 .hero {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 150px;
+    color: var(--tertiary-color);
+}
+.hero h2 {
+    font-size: 36px;
 }
 .hero-image {
-    background-image: url("../images/hero-form.jpg");
+    background-image: url("../images/leaf-pattern.jpg");
     background-size: cover;
     background-position: center;
     align-items: flex-start;
@@ -78,33 +88,38 @@ header nav ul li a:hover {
 
 /*about me styles*/
 .section-title {
-    padding-bottom: 20px;
-    text-align: left;
-    margin: 0 auto 35px auto;
-    width: 30%;
-    font-size: 48px;
-    color: var(--tertiary-color);
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    font-size: 30px;
+    color: var(--primary-color);
     background-color: var(--secondary-color);
-    border-right: 3px solid;
-}
-.primary-border {
-    border-color: var(--tertiary-color);
 }
 .about-me {
     display: flex;
-    background-color: var(--primary-color)
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+.about-me img {
+    width: 20%;
+    height: 20%;
+    margin: 0 50% 0 40%;
+    padding: 0 0 20px;
 }
 .bio-text {
-    text-align: left;
+    text-align: center;
     line-height: 1.6;
     color: var(--tertiary-color);
-    width: 80%;
+    width: 90%;
     font-size: 16px;
     margin: 0 20px 0 60px;
 }
 .work {
     display: flex;
-    background-color: var(--primary-color)
+    flex-direction: column;
+    background-color: var(--primary-color);
+    padding-top: 20px;
 }
 .all-projects {
     margin: 50px auto;
@@ -115,45 +130,70 @@ header nav ul li a:hover {
     align-items: space-between;
     border-bottom: 1px;
     background-color: var(--primary-color);
-    color: var(--tertiary-color)
+    color: var(--tertiary-color);
 }
 .run-buddy {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px 20px;
-    background-image: ;
     width: 100%;
-    flex-direction: column;
-    background-image: ;
+    padding: 200px 200px 50px;
+    background-image: url("../images/Profile.JPG");
+}
+.run-buddy a {
+    text-decoration: none;
+}
+.run-buddy a:visited {
+    color: var(--fourth-color);
+}
+.run-buddy a:hover {
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    text-shadow: none;
 }
 .project {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px auto;
-    padding: 20px;
-    flex-direction: column
+    padding: 75px 75px 50px;
+    background-image: url("../images/green-background.jpg")
 }
-
+.flex-column {
+    flex-direction: column;
+}
 /*footer styles*/
 footer {
     display: flex;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
+footer h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--primary-color);
+    margin: 0;
+    width: 50%;
+    padding: 10px;
+}
+
 .contact-info {
     display: flex;
     margin: 8px 0;
-    color:var(--tertiary-color);
+    color:var(--primary-color);
 }
 .contact-info ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
     list-style: none;
 }
 .contact-info ul li {
     padding: 10px 15px;
+}
+.contact-info ul li a {
+    padding: 10px 15px;
+    font-size: 1.25vw;
 }
 
 /*media queries*/
