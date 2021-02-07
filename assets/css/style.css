@@ -224,9 +224,16 @@ footer h1 {
         text-align: center;
     }
     .section-title {
-        width: 60%;
+        width: 100%;
     }
     .work {
         flex: 0 70%;
+    }
+    .all-projects {
+        width: 100%;
+    }
+    .bio-text {
+        text-align: left;
+        width: 70%;
     }
 }
