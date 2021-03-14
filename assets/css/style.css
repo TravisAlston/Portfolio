@@ -4,6 +4,7 @@
     --tertiary-color: rgb(245, 251, 255);
     --fourth-color: black;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -13,12 +14,15 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
 }
+
 a {
     text-decoration: none;
 }
+
 a:visited {
     text-decoration: none;
 }
+
 /*header styles*/
 header {
     display:flex;
@@ -32,6 +36,7 @@ header {
     background-color: var(--secondary-color);
     padding: 20px 35px;
 }
+
 header h1 {
     font-weight: bold;
     font-size: 48px;
@@ -39,13 +44,16 @@ header h1 {
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
 }
+
 header a {
     text-decoration: none;
     color: var(--primary-color);
 }
+
 header nav {
     margin: 8px 0;
 }
+
 header nav ul {
     display: flex;
     justify-content: space-between;
@@ -53,12 +61,14 @@ header nav ul {
     align-items: center;
     list-style: none;
 }
+
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.25vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
@@ -74,9 +84,11 @@ header nav ul li a:hover {
     padding: 150px;
     color: var(--tertiary-color);
 }
+
 .hero h2 {
     font-size: 36px;
 }
+
 .hero-image {
     background-image: url("../images/leaf-pattern.jpg");
     background-size: cover;
@@ -96,17 +108,20 @@ header nav ul li a:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
+
 .about-me {
     display: flex;
     flex-direction: column;
     background-color: var(--primary-color);
 }
+
 .about-me img {
     width: 20%;
     height: 20%;
     margin: 0 50% 0 40%;
     padding: 0 0 20px;
 }
+
 .bio-text {
     text-align: center;
     line-height: 1.6;
@@ -115,12 +130,14 @@ header nav ul li a:hover {
     font-size: 16px;
     margin: 0 20px 0 60px;
 }
+
 .work {
     display: flex;
     flex-direction: column;
     background-color: var(--primary-color);
     padding-top: 20px;
 }
+
 .all-projects {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -132,7 +149,8 @@ header nav ul li a:hover {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
 }
-.run-buddy {
+
+.lead-project {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -140,17 +158,21 @@ header nav ul li a:hover {
     padding: 200px 200px 50px;
     background-image: url("../images/Profile.JPG");
 }
-.run-buddy a {
+
+.lead-project a {
     text-decoration: none;
 }
-.run-buddy a:visited {
+
+.lead-project a:visited {
     color: var(--fourth-color);
 }
-.run-buddy a:hover {
+
+.lead-project a:hover {
     background: var(--primary-color);
     color: var(--tertiary-color);
     text-shadow: none;
 }
+
 .project {
     display: flex;
     flex-wrap: wrap;
@@ -159,6 +181,21 @@ header nav ul li a:hover {
     padding: 75px 75px 50px;
     background-image: url("../images/green-background.jpg")
 }
+
+.project a {
+    text-decoration: none;
+}
+
+.project a:visited {
+    color: var(--fourth-color);
+}
+
+.lead-project a:hover {
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    text-shadow: none;
+}
+
 .flex-column {
     flex-direction: column;
 }
